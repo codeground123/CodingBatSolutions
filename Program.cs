@@ -10,7 +10,7 @@ namespace CodingBatSolutions
         // WarmUp-1
         static void Main(string[] args)
         {
-            bool res = sleepIn(false, true);
+            bool res = monkeyTrouble(false, false);
             Console.WriteLine(res.ToString());
             Console.ReadLine();
         }
@@ -20,6 +20,11 @@ namespace CodingBatSolutions
             if (vacation || !weekday)
                 return true;
             return false;
+        }
+
+        public static bool monkeyTrouble(bool aSmile, bool bSmile)
+        {
+            return aSmile == bSmile;
         }
     }
 }
