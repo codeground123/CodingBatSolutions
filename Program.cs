@@ -9,6 +9,7 @@ namespace CodingBatSolutions
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Phani");
         }
     }
 }
