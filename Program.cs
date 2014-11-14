@@ -10,7 +10,7 @@ namespace CodingBatSolutions
         // WarmUp-1
         static void Main(string[] args)
         {
-            string res = frontBack("code");
+            string res = front3("ja");
             Console.WriteLine(res.ToString());
             Console.ReadLine();
         }
@@ -24,6 +24,18 @@ namespace CodingBatSolutions
 
         }
 
+        public static string front3(string str)
+        {
+            string newStr = string.Empty;
+            if (str.Length < 3)
+                return str;
+            for (int i = 0; i < str.Length; i++)
+            {
+                newStr += str.Substring(0,3);
+            }
+            return newStr;
+
+        }
         public static string missingChar(string str, int n)
         {
            
