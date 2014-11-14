@@ -10,13 +10,23 @@ namespace CodingBatSolutions
         // WarmUp-1
         static void Main(string[] args)
         {
-            string res = missingChar("kitten",1);
+            string res = frontBack("code");
             Console.WriteLine(res.ToString());
             Console.ReadLine();
         }
 
+        public static string frontBack(string str)
+        {
+            if (str.Length <= 1)
+                return str;
+            string mid = str.Substring(1, str.Length - 1);
+            return str[str.Length-1] + mid + str[0];
+
+        }
+
         public static string missingChar(string str, int n)
         {
+           
             string newStr = string.Empty;
             if (!string.IsNullOrEmpty(str))
             {
