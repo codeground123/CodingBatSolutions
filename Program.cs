@@ -10,9 +10,21 @@ namespace CodingBatSolutions
         // WarmUp-1
         static void Main(string[] args)
         {
-            string res = front3("ja");
+            string res = backAround("Hello");
             Console.WriteLine(res.ToString());
             Console.ReadLine();
+        }
+
+
+        public static string backAround(string str)
+        {
+            string newStr = string.Empty;
+            if (str.Length > 0)
+            {
+                newStr = str.Substring(str.Length - 1);
+             
+            }
+            return newStr+str+newStr;
         }
 
         public static string frontBack(string str)
