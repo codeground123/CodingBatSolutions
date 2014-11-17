@@ -8,14 +8,33 @@ namespace CodingBatSolutions
     class Program
     {
         // WarmUp-1
-        static void Main(string[] args)
-        {
-            string res = backAround("Hello");
+        static void Main(string[] args){
+
+            string res = front22("kitten");
             Console.WriteLine(res.ToString());
             Console.ReadLine();
         }
 
+        public static string front22(string str)
+        {
+            string front = string.Empty;
+            front = str.Substring(0, 2);
 
+            if(str.Length<=2)
+            {
+                front = str.Substring(0, str.Length);
+                return front + str + front;
+
+            }
+            return front + str + front;
+        }
+
+
+        public static bool or35(int n)
+        {
+            return (n % 3 == 0) || (n % 5 == 0);
+
+        }
         public static string backAround(string str)
         {
             string newStr = string.Empty;
