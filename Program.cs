@@ -13,7 +13,7 @@ namespace CodingBatSolutions
             bool res = mixStart("phani");
             Console.WriteLine(res.ToString());
             Console.ReadLine();
-            //Another Test Test.
+            //An
         }
 
         public static bool mixStart(string str)
