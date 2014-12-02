@@ -10,9 +10,34 @@ namespace CodingBatSolutions
         // WarmUp-1
         static void Main(string[] args){
 
-            string res = front22("kitten");
+            bool res = mixStart("phani");
             Console.WriteLine(res.ToString());
             Console.ReadLine();
+        }
+
+        public static bool mixStart(string str)
+        {
+            string abc = "Phani";
+            return true;
+        }
+
+        public static bool in1020(int a, int b)
+        {
+
+            return ((a >= 10 && a <= 20) || (b >= 10 || b <= 20));
+
+        }
+
+        public static bool icyHot(int temp1, int temp2)
+        {
+
+            return ((temp1 < 0 && temp2 > 100) || (temp1 > 100 && temp2 < 0));
+        }
+
+        public static bool startHi(string str)
+        {
+
+            return str.Contains("hi");
         }
 
         public static string front22(string str)
